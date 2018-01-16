@@ -200,3 +200,23 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+
+
+
+  /*begin media responsive tags*/
+
+
+@media screen and (max-width:640px){
+  #masthead {position:static;
+    color:#777;}
+}
+
+@media screen and (max-width:768px){
+  h1 {background-color:#777;}
+}
+
+@media screen and (max-width:980px){
+  p {background-color: #777;
+    color:#4aaaa5;}}
+}
