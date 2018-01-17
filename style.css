@@ -51,6 +51,7 @@ h3 {
   color: #fff;
   background: #fff;
   border-bottom: 2px solid #ccc;
+  margin-left:20px;
 }
 #logo {
   float: left;
@@ -201,21 +202,54 @@ input[type=submit] {
   border: 0 none;
 }
 
+ /*begin media responsive tags*/
 
-
-
-  /*begin media responsive tags*/
-
-
-@media screen and (max-width:640px){
-  #masthead {position:static;
+@media screen and (max-width: 640px){
+  #masthead {position: static;
+    text-align:center;
+            width:100%;
+            overflow-wrap:normal;}
+  #logo {width:100%;
+    overflow-wrap:normal;}
+  #main-container {width: 100%;
+                  margin-top:-300px;}
+  .sidebar {width:100%;
+    float:right;
+   position:absolute;
+   margin-top:1100px;
+   margin-bottom:200px;}
+  .work {width:100%;}
+  .main-section {width:100%;
+  }
+footer {width:100%
+  margin-top:20px;
+  position:relative;}
    }
-}
 
 @media screen and (max-width:768px){
-  ;}
+.sidebar {width:100%;
+          float: left;}
+          h3 {width:100%;}
+.sidebar h2 {width:100%;}
+#masthead{position:static;}
 }
 
 @media screen and (max-width:980px){
- }}
+  #masthead {position: static;
+             width:95%;}
+#main-container {width:40%;
+    padding-right:-200px;
+    margin-top:-100px;
+    float:left;
+    margin-left:100px;}
+@media screen and (max-width:980px){
+  #logo {margin-left:100px;}
+
+.sidebar {
+  float:right;
+  margin-right:-350px;
+  margin-top:-650px
+  margin-bottom:400px;
+      }
+    }
 }
