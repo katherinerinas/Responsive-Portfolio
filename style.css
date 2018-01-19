@@ -3,7 +3,7 @@ body {
   font-size: 18px;
   line-height: 34px;
   color: #777;
-  background: url("concrete.png");
+  background: url("assets/images/concrete.png");
 }
 * {
   box-sizing: border-box;
@@ -208,23 +208,23 @@ input[type=submit] {
  /*portfolio page*/
 @media screen and (max-width: 640px){
   #masthead {position: static;
-  	text-align:center;
-  	padding-left:-250px;
-  	padding-right:300px;
+    text-align:center;
+    padding-left:-250px;
+    padding-right:300px;
             width:100%;
             overflow-wrap:normal;}
   #logo {width:100%;
-  	text-align:center;
-     padding-left:50px;
-     padding-right:-200px;}
-  #main-container {width: 100%;
+    
+     }
+ #main-container {width: 100%;
                   margin-top:-300px;
-                  margin-left:-100px;}
+                  margin-left:-100px
+                  margin-right:-100px;}
+  
   .sidebar {width:100%;
-    float:right;
-   position:absolute;
-   margin-top:1350px;
-   margin-bottom:150px;}
+    position:static;
+   padding:30px;}
+
   .work {width:100%;}
   .main-section {width:100%;
   }
@@ -232,33 +232,38 @@ footer {width:100%
   margin-top:20px;
   margin-bottom:0px;}
   
-  nav {width:100%;}
+  nav {width:50%;}
+  nav a {width:100%;
+    margin-left:-150px;}
 
 body {width:100%;
  margin-right:-100px;}
 }
 
 
-/*Ipad size*/
+/*Ipad size: unfortunately I had a save failure, and a ton of 
+work was lost in this section; especially
+widening the class main section and id main-container to 70% of the main screen; nothing seems to be reacting.
+*/
 
 
 @media screen and (max-width:768px){
-.sidebar {width:100%;
-          float: left;}
-          h3 {width:100%;}
-.sidebar h2 {width:100%;
-margin-bottom:20px;
-margin-top:-20px;}
-#masthead{position:static;
-	overflow:auto;
-}
-#main-container {width:100%;
-margin-top:-100px;}
-body {width:100%;}
-}
-nav {width:100%;
-  padding-left:300px;}
-}
+#masthead {position:static;
+  overflow:auto;}
+  h3 {width:100%;
+  }
+.sidebar h2 {width:100%;}
+#main-container {width:80%;}
+ .main-section {width:80%;
+  }
+ .work {width:100%;}
+nav {width:100%;}
+  nav a {width:100%;
+    margin-left:-200px;}
+    .sidebar {width:100%;
+    position: static;
+   }
+  }
 
 /*Computer screen*/
 
@@ -268,24 +273,23 @@ nav {width:100%;
              padding-bottom:-150px;
              }
 #main-container {width:40%;
-    padding-right:-350px;
     margin-top:-100px;
     float:left;
     margin-left:100px;
-;}
+}
+.auth-image {width:100%;}
+.main-section {width:80%;}
   #logo {margin-left:100px;
           height:100px;
           padding-bottom:-30px;}
  nav {width:80%;
- 	padding-left:300px;
+  padding-left:300px;
     padding-right:-100px;}
-.sidebar {
-  float:right;
+  .sidebar {float:right;
   margin-right:-350px;
-  margin-top:-650px
-  margin-bottom:400px
-  margin-left:-100px;
-      }
+  margin-top:-1200px;
+  margin-bottom:400px;
+  margin-left:200px;}
     }
 
     
